@@ -10,7 +10,7 @@
 
       function drawRegionsMap(selectedYear) {
         // Load the data from the JSON file
-        $.getJSON('json/gvc_countries_hepatitis.json', function (jsonData) {
+        $.getJSON('./json/gvc_countries_hepatitis.json', function (jsonData) {
           // Filter data based on the selected year
           var filteredData = jsonData.filter(function (entry) {
             return entry.Year === selectedYear;
